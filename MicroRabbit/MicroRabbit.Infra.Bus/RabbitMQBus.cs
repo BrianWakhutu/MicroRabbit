@@ -72,7 +72,7 @@ namespace MicroRabbit.Infra.Bus
         private void StartBasicConsume<T>() where T : Event
         {
             var factory = new ConnectionFactory() {
-                HostName = 'Localhost',
+                HostName = "Localhost",
                 DispatchConsumersAsync = true
             };
             var connection = factory.CreateConnection();
